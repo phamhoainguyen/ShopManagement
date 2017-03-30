@@ -5,14 +5,20 @@
  */
 package guiprogramming;
 
+import java.awt.List;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
+import jdk.nashorn.internal.runtime.regexp.joni.encoding.CharacterType;
+import sun.security.pkcs11.wrapper.Constants;
 
 /**
  *
@@ -131,25 +137,45 @@ public class Editor extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonCreateFileActionPerformed
 
     private void jButtonSaveFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSaveFileActionPerformed
-        // TODO add your handling code here:
-        JFileChooser saveFile = new JFileChooser();
-        saveFile.showSaveDialog(null);
+        FileWriter fw = null;
+        try {
+            // TODO add your handling code here:
+            JFileChooser saveFile = new JFileChooser();
+            int returnValue = saveFile.showSaveDialog(null);
+            if(returnValue == JFileChooser.APPROVE_OPTION){
+                fw = new FileWriter(saveFile.getSelectedFile() + ".txt");
+                BufferedWriter bw = new BufferedWriter(fw);
+                bw.write(jTextArea1.getText());
+                bw.close();
+            }
+            
+        } catch (IOException ex) {
+            Logger.getLogger(Editor.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                fw.close();
+            } catch (IOException ex) {
+                Logger.getLogger(Editor.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }//GEN-LAST:event_jButtonSaveFileActionPerformed
 
     private void jButtonOpenFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOpenFileActionPerformed
         // TODO add your handling code here:
         JFileChooser openFile = new JFileChooser();
-        int returnValue =  openFile.showOpenDialog(this);
+        int returnValue =  openFile.showOpenDialog(null);
         if(returnValue == JFileChooser.APPROVE_OPTION){
               File file = openFile.getSelectedFile();
+              String line;
+              String text = "";
             try {
-              BufferedReader in = new BufferedReader(new FileReader(file));
-              String line = in.readLine();
-              while(line != null){
-              jTextArea1.setText(line + "\r\n");
-              line = in.readLine();
-}
-            } catch (FileNotFoundException ex) {
+                BufferedReader reader = new BufferedReader(new FileReader(file));
+                while((line = reader.readLine()) != null){
+                text = text +line +"\n";
+              }
+               reader.close();
+              jTextArea1.setText(text);
+           } catch (FileNotFoundException ex) {
                 Logger.getLogger(Editor.class.getName()).log(Level.SEVERE, null, ex);
             } catch (IOException ex) {
                 Logger.getLogger(Editor.class.getName()).log(Level.SEVERE, null, ex);
