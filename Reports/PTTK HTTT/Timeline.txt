@@ -1,0 +1,15 @@
+----------------------(B?t bu?c) T?t c? s? cài ð?t và s? d?ng notepad++ -------------------------
+
+Ngày 20/4
+	- Nguyên: 	
+			+ Hoàn thành mô t? x? l? phân quy?n
+			+ K? b?ng mô h?nh v?t l? cho deadline
+			+ Ch?nh s?a báo cáo
+			+ N?p deadline t?i nay(23h)
+	- Duy:
+			+ Hoàn thành mô t? chi ti?t cho các th?c th?/ m?i k?t h?p(deadline 21h) (làm cho ðàng hoàng)
+			+ V? dfd cho x? l? phân quy?n, ch?nh dfd cho d? nh?n.
+			
+	- Cý?ng
+			+ Hoàn thành 2 ?nh c?a ERD (deadline 21h)
+			+ Thi?t k? giao di?n nhý link ( trunk\GiaoDien\tongquangiaodientungmuc\Tongquan.png) deadline 23h
