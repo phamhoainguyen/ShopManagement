@@ -1,16 +1,11 @@
-----------------------(B?t bu?c) T?t c? s? c‡i ?t v‡ s? d?ng notepad++ -------------------------
-Quy t?c: TR›?C KHI L¿M G? TH? PH?I UPDATE V? R?I M?I L¿M
+*****************************************************************************
+C√†i notepad++(V√†o notepad++ ch·ªçn Encodeing->encode in UTF-8 ƒë·ªÉ g√µ ti·∫øng vi·ªát)
+Update v·ªÅ tr∆∞·ªõc khi l√†m g√¨ ƒë√≥
+N·∫øu ch·ªânh s·ª≠a file n√†o ƒë√≥ th√¨ h·ªèi th·ª≠ c√≥ ai ƒëang l√†m file ƒë√≥ kh√¥ng
+*****************************************************************************
 
-Ng‡y 20/4
-	- NguyÍn: 	
-			+ Ho‡n th‡nh mÙ t? x? l? ph‚n quy?n
-			+ K? b?ng mÙ h?nh v?t l? cho deadline
-			+ Ch?nh s?a b·o c·o
-			+ N?p deadline t?i nay(23h)
-	- Duy:
-			+ Ho‡n th‡nh mÙ t? chi ti?t cho c·c th?c th?/ m?i k?t h?p(deadline 21h) (l‡m cho ‡ng ho‡ng)
-			+ V? dfd cho x? l? ph‚n quy?n, ch?nh dfd cho d? nh?n.
-			
-	- C˝?ng
-			+ Ho‡n th‡nh 2 ?nh c?a ERD (deadline 21h)
-			+ Thi?t k? giao di?n nh˝ link ( trunk\GiaoDien\tongquangiaodientungmuc\Tongquan.png) deadline 23h
+Ng√†y 21/4
+	- Nguy√™n thi·∫øt k·∫ø giao di·ªán Thi·∫øt l·∫≠p gi√°(trunk\GiaoDien\HangHoa\HangHoa_Thietlapgia.png
+	- C∆∞·ªùng thi·∫øt k·∫ø giao di·ªán T·ªïng quan(trunk\GiaoDien\tongquangiaodientungmuc\TongQuan.png)
+	- Duy thi·∫øt k·∫ø giao di·ªán (trunk\GiaoDien\HangHoa\HangHoa_Danhmuc.png)
+	==> T·∫•t c·∫£ ph·∫£i n·ªôp l·∫°i tr∆∞·ªõc 12h ng√†y 21/4
