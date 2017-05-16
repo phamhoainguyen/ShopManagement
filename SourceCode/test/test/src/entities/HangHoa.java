@@ -1,17 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package entities;
 
 import org.apache.poi.xssf.usermodel.XSSFCell;
 
-/**
- *
- * @author phamh
- */
-public class Product {
+public class HangHoa {
     private String mMaHangHoa;
     private String mTenHangHoa;
     private int mGiaBan;
@@ -21,11 +12,11 @@ public class Product {
     private int mDinhMucTonItNhat;
     private int mDinhMucTonNhieuNhat;
     
-    public Product(){
+    public HangHoa(){
         
     }
     
-    public Product(String maHangHoa, String tenHangHoa, int giaBan, int giaVon, int tonKho
+    public HangHoa(String maHangHoa, String tenHangHoa, int giaBan, int giaVon, int tonKho
             , String nhomHangHoa, int dinhMucTonItNhat, int dinhMucTonNhieuNhat){
         
         this.mMaHangHoa = maHangHoa;
@@ -40,7 +31,7 @@ public class Product {
 
     
     //Tao constructor tu cac Cell
-    public Product(XSSFCell maHangHoa, XSSFCell tenHangHoa, XSSFCell giaBan, XSSFCell giaVon, XSSFCell tonKho, XSSFCell nhomHangHoa,
+    public HangHoa(XSSFCell maHangHoa, XSSFCell tenHangHoa, XSSFCell giaBan, XSSFCell giaVon, XSSFCell tonKho, XSSFCell nhomHangHoa,
                      XSSFCell dinhMucTonItNhat, XSSFCell dinhMucTonNhieuNhat) {
         
         this.mMaHangHoa = maHangHoa.getStringCellValue();
