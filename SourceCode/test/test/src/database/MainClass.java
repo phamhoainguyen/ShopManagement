@@ -5,7 +5,7 @@
  */
 package database;
 
-import entities.Product;
+import entities.HangHoa;
 import java.io.IOException;
 import java.sql.SQLException;
 

@@ -5,7 +5,7 @@
  */
 package database;
 
-import entities.Product;
+import entities.HangHoa;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -41,7 +41,7 @@ public class ReadingExcelFile {
     }
     
     
-    public Product getProductFromFile(int rowNum){
+    public HangHoa getProductFromFile(int rowNum){
         XSSFRow row = sheet.getRow(rowNum);
         XSSFCell  maHangHoa = row.getCell(SP_MA_HANG_HOA);
         XSSFCell  tenHangHoa = row.getCell(SP_TEN_HANG_HOA);
@@ -52,7 +52,7 @@ public class ReadingExcelFile {
         XSSFCell  dinhMucTonItNhat = row.getCell(SP_DINH_MUC_TON_IT_NHAT);
         XSSFCell  dinhMucTonNhieuNhat = row.getCell(SP_DINH_MUC_TON_NHIEU_NHAT);
         
-        return new Product(maHangHoa, tenHangHoa, giaBan, giaVon, tonKho, nhomHangHoa, dinhMucTonItNhat, dinhMucTonNhieuNhat);
+        return new HangHoa(maHangHoa, tenHangHoa, giaBan, giaVon, tonKho, nhomHangHoa, dinhMucTonItNhat, dinhMucTonNhieuNhat);
     }
     
     public int getRowsNumber(){

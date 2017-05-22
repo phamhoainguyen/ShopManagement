@@ -5,7 +5,7 @@
  */
 package database;
 
-import entities.Product;
+import entities.HangHoa;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -31,7 +31,7 @@ public class QueryData {
    
    // them 1 record hang hoa
    ////////////////////////////////////////////////////////////////////////////
-   public void insertProduct(Product product){
+   public void insertProduct(HangHoa product){
        
        try {
            String sql = "insert into hanghoa (MAHANGHOA, TENHANGHOA, GIABAN, GIAVON, TONKHO, NHOMHANGHOA, DINHMUCTONITNHAT, DINHMUCTONNHIEUNHAT) values (?, ?, ?, ?, ?, ?, ?, ?)";
@@ -72,7 +72,7 @@ public class QueryData {
    
    // them 1 recode hang hoa
    //////////////////////////////////////////////////////////////////////////
-    public void insertProduct(Product product, int tonKho, int dinhMucTonItNhat, int dinhMucTonNhieuNhat){
+    public void insertProduct(HangHoa product, int tonKho, int dinhMucTonItNhat, int dinhMucTonNhieuNhat){
        
        try {
            String sql = "insert into hanghoa (MAHANGHOA, TENHANGHOA, GIABAN, GIAVON, TONKHO, NHOMHANGHOA, DINHMUCTONITNHAT, DINHMUCTONNHIEUNHAT) values (?, ?, ?, ?, ?, ?, ?, ?)";
@@ -108,7 +108,7 @@ public class QueryData {
    
     
     //////////////////////////LAM TOI DAY ROI////////////////////////////
-    public Product getProductFromDatabase(String maHangHoa){
+    public HangHoa getProductFromDatabase(String maHangHoa){
         
         return null;
     }
